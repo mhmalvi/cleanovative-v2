@@ -1,15 +1,100 @@
-## V1.0
+# Cleanovative V2
 
-release @ 07-11-2021
+The redesigned and improved version of the Cleanovative cleaning service website. Built with Laravel, this iteration features an updated UI/UX, enhanced functionality, and Docker support for streamlined development and deployment.
 
-## V1.0.1
+## Tech Stack
 
-release @ 18-11-2021
+- **PHP** ^7.3 | ^8.0
+- **Laravel** ^8.65
+- **Webpack Mix** for asset compilation
+- **Docker** support via Docker Compose
+- **PHPUnit** for automated testing
 
-## V1.0.2
+## Features
 
-release @ 23-11-2021
+- Redesigned service catalog and landing pages
+- Improved booking and quote request flow
+- Customer and admin account management
+- Updated responsive design
+- Docker-ready development environment
+- Enhanced performance and SEO
 
-## V1.0.3
+## Getting Started
 
-release @ 24-11-2021
+### Prerequisites
+
+- PHP >= 7.3
+- Composer
+- Node.js & npm
+- MySQL or compatible database
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/mhmalvi/cleanovative-v2.git
+cd cleanovative-v2
+
+# Install PHP dependencies
+composer install
+
+# Install JavaScript dependencies
+npm install
+
+# Configure environment
+cp .env.example .env
+php artisan key:generate
+
+# Run database migrations
+php artisan migrate
+
+# Compile assets
+npm run dev
+```
+
+### Development
+
+```bash
+# Start the development server
+php artisan serve
+
+# Watch for asset changes
+npm run watch
+```
+
+### Docker
+
+```bash
+docker-compose up -d
+```
+
+### Testing
+
+```bash
+php artisan test
+```
+
+## Project Structure
+
+```
+cleanovative-v2/
+├── app/                # Application logic
+├── bootstrap/          # Framework bootstrap files
+├── config/             # Configuration files
+├── database/           # Migrations, factories, and seeders
+├── public/             # Public assets and entry point
+├── resources/          # Views, raw assets, and language files
+├── routes/             # Route definitions
+├── storage/            # Logs, cache, and compiled files
+├── tests/              # Automated tests
+├── docker-compose.yml  # Docker configuration
+└── webpack.mix.js      # Asset compilation configuration
+```
+
+## Related
+
+- [Cleanovative Web](https://github.com/mhmalvi/cleanovative-web) — Original version
+
+## License
+
+MIT
