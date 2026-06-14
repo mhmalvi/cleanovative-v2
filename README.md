@@ -1,6 +1,8 @@
 <!-- repo-card -->
 ![cleanovative-v2](docs/assets/social-card.png)
 
+![cleanovative-v2 — architecture](docs/assets/architecture.png)
+
 # Cleanovative V2
 
 The redesigned and improved version of the Cleanovative cleaning service website. Built with Laravel, this iteration features an updated UI/UX, enhanced functionality, and Docker support for streamlined development and deployment.
